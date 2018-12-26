@@ -1,0 +1,10 @@
+version: "2.1"
+services:
+    postgres:
+        image: postgres:10
+        ports:
+            - "5432:5432"
+        environment:
+          POSTGRES_PASSWORD: manager
+          POSTGRES_USER: user
+          POSTGRES_DB: db
